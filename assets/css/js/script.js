@@ -23,7 +23,7 @@ $(document).ready(function(){
             var timeFrame = parseInt($(this).attr("id").split('hour')[2]);
             console.log("timeFrame check" + timeFrame);
 
-            //time the color will be change/remove 
+            //color will change depending on time  
 
             if(timeFrame < now){
                 $(this).removeClass("present");
@@ -42,3 +42,18 @@ $(document).ready(function(){
             };
         });
     }; // end checkTime
+
+     // adding the id and the user input into the local storage
+     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
+     $("#hour-11 .description").val(localStorage.getItem("hour-11"));
+     $("#hour-12 .description").val(localStorage.getItem("hour-12"));
+     $("#hour-13 .description").val(localStorage.getItem("hour-13"));
+     $("#hour-14 .description").val(localStorage.getItem("hour-14"));
+     $("#hour-15 .description").val(localStorage.getItem("hour-15"));
+     $("#hour-16 .description").val(localStorage.getItem("hour-16"));
+     $("#hour-17 .description").val(localStorage.getItem("hour-17"));
+ 
+     checkTime();
+ 
+ }); // end of document 
