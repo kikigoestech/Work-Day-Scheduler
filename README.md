@@ -19,6 +19,9 @@ The purpose of this project was to create a simple calendar application with dyn
 
 ## Website
 
+https://kikigoestech.github.io/Word-Day-Scheduler/
 
 
 ## Contribution
+
+Made by Christian Garcia 2022
