@@ -6,10 +6,15 @@ The purpose of this project was to create a simple calendar application with dyn
 
 ## Built With
 *HTML
+
 *CSS
+
 *JavaScript
+
 *Bootstrap
+
 *jQuery
+
 *Moment.js
 
 ## Website
