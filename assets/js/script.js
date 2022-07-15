@@ -18,30 +18,32 @@ $(document).ready(function(){
         console.log(now);
 
         
-        $(".time-block").each(function(){
-            
-            var timeFrame = parseInt($(this).attr("id").split('hour')[2]);
-            console.log("timeFrame check" + timeFrame);
+    
+    
+    $(".time-block").each(function(){
+        // point to the attribute id then separate hours with the id "hour" by explicit spliting it and change the string into an integer
+        var timeFrame = parseInt($(this).attr("id").split('hour')[2]);
+        console.log("timeFrame check" + timeFrame);
 
-            //color will change depending on time  
+        //depending on the time the color will be change/remove 
 
-            if(timeFrame < now){
-                $(this).removeClass("present");
-                $(this).removeClass("future");
-                $(this).addClass("past");
-            }
-            else if(timeFrame === now) {
-                $(this).removeClass("future");
-                $(this).removeClass("past");
-                $(this).addClass("present");
-            }
-            else {
-                $(this).removeClass("past");
-                $(this).removeClass("present");
-                $(this).addClass("future");
-            };
-        });
-    }; // end checkTime
+        if(timeFrame < now){
+            $(this).removeClass("present");
+            $(this).removeClass("future");
+            $(this).addClass("past");
+        }
+        else if(timeFrame === now) {
+            $(this).removeClass("future");
+            $(this).removeClass("past");
+            $(this).addClass("present");
+        }
+        else {
+            $(this).removeClass("past");
+            $(this).removeClass("present");
+            $(this).addClass("future");
+        };
+    });
+}; // end checkTime
 
      // adding the id and the user input into the local storage
      $("#hour-9 .description").val(localStorage.getItem("hour-9"));
@@ -56,4 +58,4 @@ $(document).ready(function(){
  
      checkTime();
  
- }); // end of document 
+ }); // end of document s
