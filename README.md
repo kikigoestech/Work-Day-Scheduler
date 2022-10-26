@@ -19,7 +19,7 @@ The purpose of this project was to create a simple calendar application with dyn
 
 ## Website
 
-https://kikigoestech.github.io/Word-Day-Scheduler/
+https://kikigoestech.github.io/Work-Day-Scheduler/
 
 <img Screen Shot 2022-07-14 at 9.44.53 PM.png>
 
